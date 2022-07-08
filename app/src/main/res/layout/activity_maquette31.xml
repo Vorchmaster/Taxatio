@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maquette31">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/maquetteNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Макет 31: Подрост"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="К-во, тыс/шт"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maquetteNumber" />
+
+    <EditText
+        android:id="@+id/quantityEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/quantity"
+        app:layout_constraintBottom_toBottomOf="@+id/quantity"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underWoodHeight"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Н, м"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quantity" />
+
+    <EditText
+        android:id="@+id/underWoodHeightEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underWoodHeight"
+        app:layout_constraintBottom_toBottomOf="@+id/underWoodHeight"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underWoodAge"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="А, лет"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/underWoodHeight" />
+
+    <EditText
+        android:id="@+id/underWoodAgeEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underWoodAge"
+        app:layout_constraintBottom_toBottomOf="@+id/underWoodAge"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underWoodKoef1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Коэф."
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/underWoodAge" />
+
+    <EditText
+        android:id="@+id/underWoodKoef1Edit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underWoodKoef1"
+        app:layout_constraintBottom_toBottomOf="@+id/underWoodKoef1"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underWoodType1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Порода"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/underWoodKoef1" />
+
+    <EditText
+        android:id="@+id/underWoodType1Edit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underWoodType1"
+        app:layout_constraintBottom_toBottomOf="@+id/underWoodType1"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underWoodKoef2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Коэф."
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/underWoodType1" />
+
+    <EditText
+        android:id="@+id/underWoodKoef2Edit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underWoodKoef2"
+        app:layout_constraintBottom_toBottomOf="@+id/underWoodKoef2"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underWoodType2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Порода"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/underWoodKoef2" />
+
+    <EditText
+        android:id="@+id/underWoodType2Edit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underWoodType2"
+        app:layout_constraintBottom_toBottomOf="@+id/underWoodType2"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underWoodKoef3"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Коэф."
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/underWoodType2" />
+
+    <EditText
+        android:id="@+id/underWoodKoef3Edit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underWoodKoef3"
+        app:layout_constraintBottom_toBottomOf="@+id/underWoodKoef3"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underWoodType3"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Порода"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/underWoodKoef3" />
+
+    <EditText
+        android:id="@+id/underWoodType3Edit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underWoodType3"
+        app:layout_constraintBottom_toBottomOf="@+id/underWoodType3"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/mark"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Оценка"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/underWoodType3" />
+
+    <Spinner
+        android:id="@+id/markEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/mark"
+        app:layout_constraintBottom_toBottomOf="@+id/mark"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Внести данные"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:background="#ECECEC"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mark" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/retreatButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Назад"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:background="#ECECEC"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

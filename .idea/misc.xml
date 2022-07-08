@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_add_maquette.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_map.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_maquette1.xml" value="0.1682615629984051" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_maquette10.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_maquette2.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_maquette3.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_maquette31.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_maquette32.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_maquette4.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_maquette_other.xml" value="0.264" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_taxatio_card.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/activity_vyd_select.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/add_button.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/add_button_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquet_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquette1.xml" value="0.16" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquette10.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquette10_item.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquette2.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquette3.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquette31.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquette32.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquette4.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquette_item.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/maquette_other_item.xml" value="0.128" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/other_maquette.xml" value="0.264" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/quest_item.xml" value="0.1" />
+        <entry key="..\:/Users/ivl/YandexDisk/Taxatio/app/src/main/res/layout/spinner_item.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

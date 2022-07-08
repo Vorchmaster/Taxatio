@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maquette32">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/maquetteNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Макет 32: Подлесок"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/density"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Густота"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maquetteNumber" />
+
+    <Spinner
+        android:id="@+id/densityEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/density"
+        app:layout_constraintBottom_toBottomOf="@+id/density"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underGrowthType1"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Порода"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/density" />
+
+    <EditText
+        android:id="@+id/underGrowthType1Edit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underGrowthType1"
+        app:layout_constraintBottom_toBottomOf="@+id/underGrowthType1"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underGrowthType2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Порода"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/underGrowthType1" />
+
+    <EditText
+        android:id="@+id/underGrowthType2Edit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underGrowthType2"
+        app:layout_constraintBottom_toBottomOf="@+id/underGrowthType2"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/underGrowthType3"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Порода"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/underGrowthType2" />
+
+    <EditText
+        android:id="@+id/underGrowthType3Edit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/underGrowthType3"
+        app:layout_constraintBottom_toBottomOf="@+id/underGrowthType3"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="Внести данные"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:background="#ECECEC"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/underGrowthType3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/retreatButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Назад"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:background="#ECECEC"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

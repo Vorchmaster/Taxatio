@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Maquette1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/maquetteNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Макет 1: Местонахождение таксационного выдела"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/vydNumber"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="№ выдела"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/maquetteNumber" />
+
+            <EditText
+                android:id="@+id/vydNumberEdit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/vydNumber"
+                app:layout_constraintBottom_toBottomOf="@+id/vydNumber"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/square"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Площадь, Га"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vydNumber" />
+
+            <EditText
+                android:id="@+id/squareEdit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/square"
+                app:layout_constraintBottom_toBottomOf="@+id/square"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/groundCathegory"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Категория земель"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/square" />
+
+            <EditText
+                android:id="@+id/groundCathegoryEdit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/groundCathegory"
+                app:layout_constraintBottom_toBottomOf="@+id/groundCathegory"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/DP"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="ДП"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/groundCathegory" />
+
+            <Spinner
+                android:id="@+id/DPEdit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/DP"
+                app:layout_constraintBottom_toBottomOf="@+id/DP"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/OZU"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="ОЗУ"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DP" />
+
+            <EditText
+                android:id="@+id/OZUEdit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/OZU"
+                app:layout_constraintBottom_toBottomOf="@+id/OZU"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/expozition"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Склон экспоз."
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/OZU" />
+
+            <Spinner
+                android:id="@+id/expozitionEdit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/expozition"
+                app:layout_constraintBottom_toBottomOf="@+id/expozition"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/stepness"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="крутиз."
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/expozition" />
+
+            <EditText
+                android:id="@+id/stepnessEdit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/stepness"
+                app:layout_constraintBottom_toBottomOf="@+id/stepness"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/VNUM"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="ВНУМ"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stepness" />
+
+            <EditText
+                android:id="@+id/VNUMEdit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/VNUM"
+                app:layout_constraintBottom_toBottomOf="@+id/VNUM"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/erozyKind"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Эрозия вид"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/VNUM" />
+
+            <Spinner
+                android:id="@+id/erozyKindEdit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/erozyKind"
+                app:layout_constraintBottom_toBottomOf="@+id/erozyKind"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/erozyStage"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Степень"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/erozyKind" />
+
+            <Spinner
+                android:id="@+id/erozyStageEdit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/erozyStage"
+                app:layout_constraintBottom_toBottomOf="@+id/erozyStage"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sendButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:text="Внести данные"
+                android:textSize="24sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:background="#ECECEC"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/erozyStage" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/retreatButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="Назад"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:background="#ECECEC"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

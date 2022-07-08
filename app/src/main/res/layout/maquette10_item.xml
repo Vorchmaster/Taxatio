@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tier"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Ярус"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/tierEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:entries="@array/YARlist"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tier"
+        app:layout_constraintStart_toEndOf="@+id/tier" />
+
+    <TextView
+        android:id="@+id/structureKoef"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Структура коэф."
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tier" />
+
+    <EditText
+        android:id="@+id/structureKoefEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/structureKoef"
+        app:layout_constraintBottom_toBottomOf="@+id/structureKoef"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/structureBreed"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Порода"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/structureKoef" />
+
+    <EditText
+        android:id="@+id/structureBreedEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/structureBreed"
+        app:layout_constraintBottom_toBottomOf="@+id/structureBreed"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="А, лет"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/structureBreed" />
+
+    <EditText
+        android:id="@+id/ageEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/age"
+        app:layout_constraintBottom_toBottomOf="@+id/age"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="H, м"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/age" />
+
+    <EditText
+        android:id="@+id/heightEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/height"
+        app:layout_constraintBottom_toBottomOf="@+id/height"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/diameter"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Д, см"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/height" />
+
+    <EditText
+        android:id="@+id/diameterEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/diameter"
+        app:layout_constraintBottom_toBottomOf="@+id/diameter"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/productClass"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Кл. тов."
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/diameter" />
+
+    <Spinner
+        android:id="@+id/productClassEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/productClass"
+        app:layout_constraintBottom_toBottomOf="@+id/productClass"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/origin"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Происх."
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productClass" />
+
+    <EditText
+        android:id="@+id/originEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/origin"
+        app:layout_constraintBottom_toBottomOf="@+id/origin"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/completeness"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Полнота"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/origin" />
+
+    <EditText
+        android:id="@+id/completenessEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/completeness"
+        app:layout_constraintBottom_toBottomOf="@+id/completeness"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/e"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Е"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/completeness" />
+
+    <EditText
+        android:id="@+id/eEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/e"
+        app:layout_constraintBottom_toBottomOf="@+id/e"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/silos"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Запас, м³/Га"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/e" />
+
+    <EditText
+        android:id="@+id/silosEdit"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/silos"
+        app:layout_constraintBottom_toBottomOf="@+id/silos"
+        android:layout_marginStart="32dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
